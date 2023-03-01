@@ -1,0 +1,101 @@
+.collection {
+    overflow: hidden;
+    height: 768px;
+    .container {
+        display: flex;
+        padding-left: 65px;
+    }
+    &__info {
+        margin-top: 236px;
+        position: relative;
+        width: 343px;
+        &::before {
+            @include line;
+            position: absolute;
+            top: 27px;
+            left: -64px;
+        }
+        &__title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 1;
+            color: $title-color;
+            margin-bottom: 0;
+        }
+        &__subtitle {
+            line-height: 1;
+            margin-top: 16px;
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            color: $title-color;
+        }
+        &__text {
+            margin-top: 39px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(27, 26, 23, 0.82);
+        }
+        &__button {
+            width: 205px;
+            height: 64px;
+            background: #444240;
+            border: none;
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-top: 36px;
+        }
+    }
+    &__watch {
+        position: relative;
+        display: flex;
+    }
+    &__price {
+        position: relative;
+        display: flex;
+        margin: 128px 0 0 55px;
+        &__text {
+            font-family: 'Prata';
+            margin-right: 7px;
+        }
+        &__img {
+            img {
+                transform: translateY(-2px);
+            }
+        }
+        &::after {
+            @include line;
+            position: absolute;
+            right: -66px;
+            top: 11px;
+        }
+    }
+    &__img {
+        position: relative;
+        top: -11px;
+    }
+    &__diameter {
+        font-family: 'Prata';
+        margin-top: 636px;
+        position: relative;
+        &::before {
+            @include line;
+            position: absolute;
+            top: 10px;
+            left: -65px;
+        }
+    }
+    &__semicircle {
+        background: linear-gradient(180deg, rgba(234, 227, 212, 0) 0%, #EAE3D4 100%);
+        border-radius: 100% 0 0 100%;
+        position: absolute;
+        width: 496px;
+        height: 944.01px;
+        left: -53px;
+        top: -94px;
+        z-index: -1;
+    }
+}
