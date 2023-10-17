@@ -1,0 +1,39 @@
+.footer {
+    background: #444240;
+    min-height: 275px;
+    padding-top: 79px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__element {
+        &__name {
+            font-family: 'Playfair Display', serif;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.14em;
+            color: #FFFFFF;
+            margin-bottom: 23px;
+        }
+        &__title {
+            margin-bottom: 33px;
+            font-size: 14px;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &__link {
+            color: rgba(255, 255, 255, 0.75);
+            &:hover {
+                color: rgba(200, 200, 200, 0.75);
+            }
+        }
+        &__text {
+            margin-bottom: 15px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+    }
+}
