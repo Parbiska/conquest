@@ -1,5 +1,6 @@
 .advantages {
     background: #FDFDFB;
+
     &__container {
         overflow: hidden;
         margin: 0 auto;
@@ -9,6 +10,7 @@
         min-height: 518px;
         min-width: 0;
     }
+
     &__square {
         position: absolute;
         width: 468px;
@@ -16,6 +18,7 @@
         z-index: -1;
         background: #F7F5EF;
     }
+
     &__small-circle {
         border: 1px solid #D4B098;
         border-radius: 50%;
@@ -25,6 +28,7 @@
         width: 365.16px;
         height: 365.16px;
     }
+
     &__big-circle {
         border: 1px solid #D4B098;
         border-radius: 50%;
@@ -34,38 +38,52 @@
         width: 744.38px;
         height: 744.38px;
     }
+
     &__slider {
         width: 100%;
         height: 100%;
     }
+
     &__navigation {
         display: flex;
         margin: 20px 0 0 33em;
     }
+
     &__pagination {
         width: 10px;
         text-align: center;
         line-height: 25px;
         margin: 0 20px;
+
         span {
             font-family: 'Prata';
             font-size: 12px;
             color: rgba(27, 26, 23, 0.82);
         }
     }
-    &__button-prev, &__button-next {
+
+    &__button-prev,
+    &__button-next {
         text-align: center;
         width: 15px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
-    &__wrapper{
+
+    &__wrapper {
         padding: 44px 0 0 177px;
-        
+
     }
+
     &__slide {
         display: flex;
+
         &__img-container {
             margin-right: 70px;
         }
+
         &__title {
             margin-top: 88px;
             font-family: 'Playfair Display', serif;
@@ -73,12 +91,14 @@
             font-size: 32px;
             line-height: 1;
         }
+
         &__text {
             margin: 38px 0 45px 0;
             font-size: 16px;
             width: 376px;
             line-height: 150%;
         }
+
         &__button {
             width: 205px;
             height: 64px;
